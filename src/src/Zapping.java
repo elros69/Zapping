@@ -5,7 +5,12 @@ public class Zapping {
 
     public int zappingMethod(int canalOrigen, int canalDestino) {
         int clics = canalDestino - canalOrigen;
-        return clics;
+        if (clics > 50) {
+            clics = canalOrigen - 1 + (100 - canalDestino);
+            return clics;
+        } else {
+            return clics;
+        }
     }
 
 }
