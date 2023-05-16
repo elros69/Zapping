@@ -9,6 +9,8 @@ public class Zapping {
             clics = canalOrigen - 1 + (100 - canalDestino);
         } else if (clics < -50) {
             clics = canalDestino - 1 + (100 - canalOrigen);
+        } else if (clics == 50) {
+            return 49;
         }
         return clics;
     }
