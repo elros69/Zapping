@@ -7,10 +7,10 @@ public class Zapping {
         int clics = canalDestino - canalOrigen;
         if (clics > 50) {
             clics = canalOrigen - 1 + (100 - canalDestino);
-            return clics;
-        } else {
-            return clics;
+        } else if (clics < -50) {
+            clics = canalDestino - 1 + (100 - canalOrigen);
         }
+        return clics;
     }
 
 }

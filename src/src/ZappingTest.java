@@ -27,4 +27,16 @@ class ZappingTest {
         Zapping zapping = new Zapping();
         assertEquals(2, zapping.zappingMethod(2, 99));
     }
+
+    @Test
+    void zappingMethod5() {
+        Zapping zapping = new Zapping();
+        assertEquals(41, zapping.zappingMethod(5, 63));
+    }
+
+    @Test
+    void zappingMethod6() {
+        Zapping zapping = new Zapping();
+        assertEquals(41, zapping.zappingMethod(63, 5));
+    }
 }
